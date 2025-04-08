@@ -36,8 +36,8 @@ public class ServiceTarefa{
         }
     }
 
-    public void removerPorId(*ijnt id) {
-        FOR(tarefa t: tarefas) {
+    public void removerPorId(int id) {
+        for(tarefa t: tarefas) {
             if(t.getId() == id){
                 tarefas.remove(t);
                 break;
@@ -45,10 +45,13 @@ public class ServiceTarefa{
         }
     }
 
-    public void atualizarPorID(string name){
+    public void atualizarPorID(string descricao){
     for(Tarefa t : tarefas) {
-
-
+        for(tarefa t: tarefas) {
+            if(t.getName() == descricao){
+                tarefas.remove(t);
+                break;
+            }
     }
 }
 
